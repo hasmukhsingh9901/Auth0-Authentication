@@ -2,8 +2,9 @@
 import { navLinks } from "@/utils";
 import { useUser } from "@auth0/nextjs-auth0/client";
 import React from "react";
-
-
+import SignUpButton from "./signup-button";
+import LoginButton from "./login-button";
+import LogoutButton from "./logout-button";
 
 const Navbar = () => {
   const { user, error, isLoading } = useUser();
@@ -21,11 +22,15 @@ const Navbar = () => {
 
       {user && !isLoading && (
         <>
-          {/* <SignupButton /> */}
-          {/* <LoginButton /> */}
+          <SignUpButton />
+          <LoginButton />
         </>
       )}
-      {user && !isLoading && <>{/* LogoutButton */}</>}
+      {user && !isLoading && (
+        <>
+          <LogoutButton />
+        </>
+      )}
     </div>
   );
 };
