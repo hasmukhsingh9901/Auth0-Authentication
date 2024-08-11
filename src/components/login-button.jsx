@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const LoginButton = () => {
-  return (
-    <div>LoginButton</div>
-  )
-}
+  return <a href="/api/auth/login">Login</a>;
+};
 
-export default LoginButton
+export default LoginButton;

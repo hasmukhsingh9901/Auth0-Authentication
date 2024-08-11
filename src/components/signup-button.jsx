@@ -2,7 +2,7 @@ import React from 'react'
 
 const SignUpButton = () => {
   return (
-    <div>SignUpButton</div>
+    <a href='/api/auth/signup'>Sign Up</a>
   )
 }
 

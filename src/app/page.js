@@ -13,8 +13,8 @@ const page = async () => {
   console.log(user);
 
   return (
-    <div className=''>
-      <a href='/api/auth/login'>Login</a>
+    <div className='flex items-center justify-center'>
+      <p className='text-3xl'>Home</p>
     </div>
   )
 }
